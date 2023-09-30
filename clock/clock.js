@@ -15,11 +15,15 @@ function getThreeNumbers() {
   for (let i = 0; i < 3; i++) {
     numbers.push(Math.floor(Math.random() * 12) + 1);
   }
+
   return numbers;
 }
 
 function getNextSequence() {
   const sequence = getThreeNumbers();
+  while (sequence[0] === sequence[1] || sequence[1] === sequence[2] || sequence[0] === sequence[2]) {
+    sequence = getThreeNumbers();
+  }
   const sequenceText = sequence.join(", ");
   // TODO: display the sequence on the screen
   numtext = document.getElementById("numtext");
