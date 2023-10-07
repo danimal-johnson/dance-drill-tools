@@ -14,7 +14,17 @@ ul {
 }
 
 li {
-  display: inline-block;
+  /* display: inline-block; */
+  margin: 2.5rem 1rem;
+}
+
+a {
+  border: 2px solid darkblue;
+  background-color: lightblue;
+  text-decoration: none;
+  padding: 1em 1.5em;
+  margin: 1rem .5rem;
+  border-radius: 5px;
 }
 
 footer {
